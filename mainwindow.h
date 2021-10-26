@@ -1,8 +1,8 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-
+#include <QMessageBox>
 #include <QMainWindow>
-#include "bus.h"
+#include "etudiant.h"
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -16,12 +16,14 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_pushButton_clicked();
 
-    void on_pushButton_2_clicked();
+
+    void on_pushButton_ajouter_3_clicked();
+
+    void on_pushButton_supprimer_2_clicked();
 
 private:
     Ui::MainWindow *ui;
-    bus bu;
+Etudiant Etmp;
 };
 #endif // MAINWINDOW_H
